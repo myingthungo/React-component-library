@@ -1,0 +1,166 @@
+@media (max-width: 767px) {
+  /* Success */
+  .alertContainer {
+    margin-top: 50px;
+  }
+  .successText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+
+    position: absolute;
+    bottom: -40px;
+    left: 480px; /* Push "Success" to the left */
+  }
+  .greenBackground {
+    /*success color background color*/
+
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 40px;
+    background: #d4ffeb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+
+  .checkIcon {
+    position: absolute;
+    right: 60px;
+    bottom: -5px;
+  }
+  .congratsText {
+    /* congratulation text */
+
+    position: absolute;
+    /* Push "Success" to the left */
+    left: -50px;
+    bottom: -7px;
+  }
+  .alertDescription {
+    /* success paragraph discription */
+    display: none;
+  }
+
+  /* Warning */
+  .warningContainer {
+    margin-top: 150px;
+  }
+
+  .warningText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+    margin-top: 50px;
+    position: absolute;
+    bottom: -150px;
+    left: 270px;
+  }
+  .yellowBackground {
+    position: absolute;
+
+    left: 100px;
+
+    width: 400px;
+    height: 40px;
+
+    margin-top: 10px;
+  }
+  .attentionLetter {
+    position: absolute;
+    left: 175px;
+  }
+
+  .warningIcon {
+    position: absolute;
+    left: 140px;
+    bottom: 23px;
+  }
+
+  .warningDescription {
+    display: none;
+  }
+
+  /* Error */
+  .errorContainer {
+    margin-top: 90px;
+  }
+  .errorText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+    margin-top: 20px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+  }
+  .errorLetter {
+    max-width: 70%;
+    position: absolute;
+    left: 90px;
+    top: 19px;
+  }
+  .errorIcon {
+    position: absolute;
+    left: 60px;
+    top: 20px;
+  }
+
+  .errorBackground {
+    position: absolute;
+    left: 100px;
+    width: 400px;
+    height: 40px;
+    margin-top: -40px;
+  }
+  .errorDescription {
+    display: none;
+  }
+
+  /* Neutral */
+  .neutralContainer {
+    margin-top: 50px;
+  }
+
+  .neutralBackground {
+    margin-top: -50px;
+    left: 100px;
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    right: -200px;
+  }
+
+  .neutralText {
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 1.2rem;
+    color: #5e5d5d;
+    margin-top: 10px;
+    position: relative;
+    top: -70px;
+    left: 10px;
+  }
+
+  .infoIcon {
+    position: absolute;
+    left: 125px;
+    top: 20px;
+  }
+  .neutralMessage {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+  }
+
+  .neutralDescription {
+    display: none;
+  }
+}

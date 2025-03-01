@@ -1,0 +1,105 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 1000px;
+  height: 200px;
+  background: #2545b8;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.heroImage {
+  width: 250px; /* Adjust width */
+  height: 270px;
+  border-radius: 12px;
+  margin-right: 20px;
+  position: relative;
+  bottom: -10px;
+  box-shadow: 0px 10px 10px -5px #0000000a;
+
+  box-shadow: 0px 20px 25px -5px #0000001a;
+}
+
+.textContainer {
+  max-width: 800px; /* Adjust text width */
+  display: flex;
+  flex-direction: column;
+  font-family: inter;
+}
+.quoteIcon {
+  width: 10px;
+  height: auto;
+  top: 6px;
+  left: 1.5px;
+}
+.quote {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.author {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.position {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to bottom, #ffffff 30%, #2545b8 20%);
+    border-radius: 12px;
+
+    color: white;
+    margin: 30px auto 100px; /* Center horizontally */
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .heroImage {
+    width: 270px; /* Adjust size */
+    height: 250px;
+    border-radius: 12px;
+    object-fit: cover; /* Ensures proper cropping */
+    position: absolute;
+    top: -1px; /* Move up */
+    left: 50%;
+    padding-top: 10px;
+    transform: translateX(-50%); /* Center horizontally */
+    box-shadow: 0px 10px 10px -5px #0000000a, 0px 20px 25px -5px #0000001a;
+    border-radius: 20px;
+    /* Crop bottom part */
+    clip-path: inset(0px 0px 99px 0px); /* Top Right Bottom Left */
+  }
+  .quoteIcon {
+    margin-top: 60px;
+  }
+  .textContainer {
+    text-align: center;
+    margin-top: 60px; /* Push text down */
+  }
+
+  .quote {
+    font-style: italic;
+  }
+
+  .author {
+    font-weight: bold;
+  }
+
+  .position {
+    opacity: 0.7;
+  }
+}

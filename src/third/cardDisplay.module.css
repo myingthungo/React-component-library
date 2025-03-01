@@ -1,0 +1,65 @@
+.cardBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  height: 150px;
+  background: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center;
+  position: relative; /* Ensures absolute children move correctly */
+  left: 50%;
+  transform: translate(-50%, 0); /* Center horizontally */
+  padding-bottom: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 70px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: visible; /* Ensures UploadImage is not clipped */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cardBackground:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-50%, -5px); /* Moves it slightly up */
+}
+
+.UploadImage {
+  position: absolute;
+  top: -30px; /* Moves it higher */
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #3b82f6;
+  padding: 12px;
+  border-radius: 8px;
+  border-bottom: 4px solid #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Upload Icon Styling */
+
+/* Title */
+.title {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111827;
+  margin-top: -20px; /* Space below icon */
+}
+
+/* Description */
+.Cardpara {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .cardBackground {
+    margin-top: 40px;
+  }
+}

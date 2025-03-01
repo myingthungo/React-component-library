@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items */
+  gap: 10px; /* Adds spacing between items */
+}
+
+.square {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 16px;
+  color: #5e5d5d;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.badgeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  width: 60px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.pill {
+  border-radius: 10px;
+}
+
+/* Responsive Grid Layout for 4 Rows, 2 Columns */
+@media (max-width: 767px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers badges */
+    gap: 10px; /* Adds spacing */
+    max-width: 300px; /* Limits width to avoid excessive stretching */
+    margin: 0 auto; /* Centers the badge container */
+  }
+
+  .square {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .badgeContainer {
+    width: calc(25% - 10px); /* 4 columns in a row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .badge {
+    font-size: 12px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

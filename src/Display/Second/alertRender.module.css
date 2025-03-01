@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.alertContainer {
+  width: 100%;
+}
+.greenBackground {
+  width: 800px;
+  height: 120px;
+  background: #d4ffeb;
+  border-radius: 6px;
+  padding: 14px; /* Balanced padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 70px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.success {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 10px; /* Adjust spacing between items */
+  width: 100%;
+  position: relative; /* Helps with fine-tuning */
+}
+
+.successText {
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 63px;
+  color: #5e5d5d;
+
+  position: absolute;
+  bottom: -2px;
+  left: 0px; /* Push "Success" to the left */
+}
+
+.alertMessage {
+  /* congratulation text */
+  text-align: right;
+  position: absolute;
+
+  flex-grow: 1; /* Allow it to take space and stay centered */
+  color: #065f46;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  width: 832;
+  height: 20;
+}
+.checkIcon {
+  position: relative;
+  left: -320px;
+  bottom: 20px;
+}
+.congratsText {
+  /* congratulation text */
+  position: relative;
+  right: 300px; /* Push "Success" to the left */
+  top: -20px;
+}
+.alertDescription {
+  display: block;
+  font-family: Inter;
+  width: 100%; /* Fixed missing px */
+  height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 148px;
+  color: #047857;
+  position: absolute;
+
+  bottom: -5px;
+}
+
+/*this part for warning css */
+.warningContainer {
+  margin-top: 10px;
+}
+
+.warningHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Reduced gap for better alignment */
+  margin-left: 95px;
+}
+
+.warningText {
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 63px;
+  color: #5e5d5d;
+  position: relative;
+  top: 25px;
+  right: 10px;
+}
+
+.attentionLetter {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2%;
+  color: #92400e;
+  position: relative;
+  right: 318px;
+  bottom: 15px;
+}
+
+.warningDescription {
+  width: 100%; /* Fixed missing px */
+  height: auto; /* Adjust height dynamically */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b45309;
+
+  position: relative;
+  left: 110px;
+  bottom: 55px;
+}
+
+.yellowBackground {
+  width: 800px;
+  height: 120px;
+  background: #f3ebce;
+  border-radius: 6px;
+  padding: 14px; /* Balanced padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 70px;
+  top: -50px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+.warningIcon {
+  position: absolute;
+  left: -350px;
+  bottom: 20px;
+}
+
+/*this line for error css */
+.errorContainer {
+  margin-top: 50px;
+}
+
+.errorHeader {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between "Error" and message */
+}
+
+.errorText {
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 63px;
+  color: #5e5d5d;
+  position: relative;
+  bottom: 30px;
+  left: -10px;
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  /* Adjust spacing */
+}
+
+.errorIcon {
+  position: relative;
+  bottom: 15px;
+  right: 240px;
+}
+
+.errorLetter {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #92400e;
+  position: relative;
+  left: -220px;
+  top: -15px;
+}
+
+.errorDescription {
+  width: 100%; /* Fixed missing px */
+  height: auto; /* Adjust height dynamically */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b45309;
+
+  text-align: start; /* Center text inside the background */
+  position: relative;
+  left: 112px;
+  bottom: 104px;
+}
+.errorBackground {
+  background: rgb(244, 194, 175); /* Light red background */
+  width: 800px;
+  height: 120px; /* Consistent height */
+  border-radius: 6px;
+  padding: 14px; /* Balanced padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  bottom: 150px;
+  left: 70px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Prevents padding from increasing size */
+}
+
+/*this line for neutral css */
+.neutralContainer {
+  margin-top: -30px;
+}
+
+.neutralHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.neutralText {
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 1.7rem;
+  color: #5e5d5d;
+  margin-left: 90px;
+  position: relative;
+  bottom: 40px;
+  right: 100px;
+}
+
+.neutralBackground {
+  background: #b9d6fa; /* Light blue background */
+  width: 800px;
+  height: 120px; /* Consistent height */
+  border-radius: 6px;
+  padding: 14px; /* Balanced padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  left: 70px;
+  bottom: 160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.infoIcon {
+  position: relative;
+  right: 315px;
+  top: -18px;
+}
+
+.neutralMessage {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1e40af;
+  right: 293px;
+  position: relative;
+  bottom: 20px;
+}
+
+.neutralDescription {
+  max-width: 90%;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1e40af;
+
+  text-align: start;
+  position: relative;
+  left: 115px;
+  top: -110px;
+}
+
+@media (max-width: 767px) {
+  /* Success */
+  .alertContainer {
+    margin-top: 70px;
+  }
+  .successText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px; /* Push "Success" to the left */
+  }
+  .greenBackground {
+    /*success color background color*/
+
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+
+  .checkIcon {
+    position: relative;
+    left: -10px;
+    bottom: 1px;
+  }
+  .congratsText {
+    /* congratulation text */
+
+    position: relative;
+    /* Push "Success" to the left */
+    left: 1px;
+    top: 1px;
+  }
+  .alertDescription {
+    /* success paragraph discription */
+    display: none;
+  }
+
+  /* Warning */
+  .warningContainer {
+    margin-top: 100px;
+  }
+
+  .warningText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+    margin-top: 0px;
+    position: relative;
+    top: -30px;
+    left: 70px;
+  }
+  .yellowBackground {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+  }
+  .attentionLetter {
+    position: relative;
+    left: -20px;
+    bottom: 1px;
+  }
+
+  .warningIcon {
+    position: relative;
+    left: -30px;
+    bottom: 1px;
+  }
+
+  .warningDescription {
+    display: none;
+  }
+
+  /* Error */
+  .errorContainer {
+    margin-top: 50px;
+  }
+  .errorText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: hsl(0, 1%, 37%);
+
+    position: relative;
+    bottom: 50px;
+    left: 70px;
+  }
+  .errorLetter {
+    width: 100%;
+    position: relative;
+    left: 1px;
+    top: 1px;
+  }
+  .errorIcon {
+    position: relative;
+    left: -5px;
+    top: 4px;
+  }
+
+  .errorBackground {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .errorDescription {
+    display: none;
+  }
+
+  /* Neutral */
+  .neutralContainer {
+    margin-top: 10px;
+  }
+  .neutralContainer {
+    margin-bottom: 10px;
+  }
+
+  .neutralBackground {
+    position: relative;
+    left: auto;
+    right: auto;
+    width: 400px;
+    height: 40px;
+
+    top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .neutralText {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 63px;
+    color: #5e5d5d;
+    margin-top: 40px;
+    position: absolute;
+    top: 375px;
+    left: 10px;
+  }
+
+  .infoIcon {
+    position: relative;
+    left: 1px;
+    top: 3px;
+  }
+  .neutralMessage {
+    position: relative;
+    left: 11px;
+    top: 1px;
+  }
+
+  .neutralDescription {
+    display: none;
+  }
+}
